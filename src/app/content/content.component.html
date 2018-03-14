@@ -1,0 +1,15 @@
+<h1>{{  pageTitle }}</h1>
+
+<div *ngFor="let c of content">
+  <h3>{{ c.barcode }}</h3>
+  <p>{{ c.program }}</p>
+  <p>{{ c.episode }}</p>
+  
+  <div>
+  <a href ="{{ c.sp_notes }}">View S&P Notes</a>
+  </div>
+  
+  <p>{{ c.qc_notes }}</p>
+  <p>{{ c.updated_at }}</p>
+  <hr>
+</div>
