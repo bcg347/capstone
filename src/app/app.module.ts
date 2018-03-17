@@ -11,6 +11,7 @@ import { ContentRejectionsComponent } from './content/content-rejected.component
 import { ContentRfaComponent } from './content/content-rfa.component';
 import { ContentProgressComponent } from './content/content-progress.component';
 import { ContentListComponent } from './content/content-list.component';
+import { ContentShowComponent } from './content/content-show.component';
 
 import { AvidIngestComponent } from './workflow/avidingest.component';
 import { SpComponent } from './workflow/sp.component';
@@ -40,7 +41,8 @@ import { AppRoutingModule } from './app-routing.module';
     SpComponent,
     EditComponent,
     ServerIngestComponent,
-    QcComponent
+    QcComponent,
+    ContentShowComponent
   ],
   providers: [],
   bootstrap: [

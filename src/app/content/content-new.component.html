@@ -6,46 +6,121 @@
           <label for="barcode">Barcode</label>
           <input type="text"
                  id="barcode"
-                 placeholder=""
+                 placeholder=123456
                  required
                  name="barcode"
                  #barcode='ngModel'
                  [(ngModel)]="content.barcode"
         >
+          <div [hidden]="barcode.valid || barcode.pristine">
+				Barcode is required
+	      </div>
         </div>
         <div class="form-group">
-          <label for="program">Program</label>
+          <label for="program">Program Title</label>
           <input type="text"
                  id="program"
-                 placeholder=""
+                 placeholder="CRM"
                  required
                  name="program"
                  #program='ngModel'
                  [(ngModel)]="content.program"
         >
+          <div [hidden]="program.valid || program.pristine">
+				Program Title is required
+	      </div>
         </div>
         <div class="form-group">
-          <label for="episode">Episode</label>
+          <label for="episode">Episode Number</label>
           <input type="number"
                  id="episode"
-                 placeholder=""
+                 placeholder=101
                  required
                  name="episode"
                  #episode='ngModel'
                  [(ngModel)]="content.episode"
         >
+          <div [hidden]="episode.valid || episode.pristine">
+				Episode Number is required
+	      </div>
         </div>
-        <div class="form-group">
-          <label for="sp_status">S&P Status</label>
-          <input type="string"
-                 id="sp_status"
-                 placeholder=""
-                 required
-                 name="sp_status"
-                 #sp_status='ngModel'
-                 [(ngModel)]="content.sp_status"
-        >
-        </div>
+        <!--<div class="form-group">-->
+        <!--  <label for="sp_status">S&P Status</label>-->
+        <!--  <input type="string"-->
+        <!--         id="sp_status"-->
+        <!--         placeholder=""-->
+        <!--         required-->
+        <!--         name="sp_status"-->
+        <!--         #sp_status='ngModel'-->
+        <!--         [(ngModel)]="content.sp_status"-->
+        <!-->-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+        <!--  <label for="sp_notes">S&P Notes</label>-->
+        <!--  <input type="string"-->
+        <!--         id="sp_notes"-->
+        <!--         placeholder=""-->
+        <!--         required-->
+        <!--         name="sp_notes"-->
+        <!--         #sp_notes='ngModel'-->
+        <!--         [(ngModel)]="content.sp_notes"-->
+        <!-->-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+        <!--  <label for="edit_status">Edit Status</label>-->
+        <!--  <input type="string"-->
+        <!--         id="edit_status"-->
+        <!--         placeholder=""-->
+        <!--         required-->
+        <!--         name="edit_status"-->
+        <!--         #edit_status='ngModel'-->
+        <!--         [(ngModel)]="content.edit_status"-->
+        <!-->-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+        <!--  <label for="sp_status">S&P Status</label>-->
+        <!--  <input type="string"-->
+        <!--         id="sp_status"-->
+        <!--         placeholder=""-->
+        <!--         required-->
+        <!--         name="sp_status"-->
+        <!--         #sp_status='ngModel'-->
+        <!--         [(ngModel)]="content.sp_status"-->
+        <!-->-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+        <!--  <label for="ingest_status">Ingest Status</label>-->
+        <!--  <input type="string"-->
+        <!--         id="ingest_status"-->
+        <!--         placeholder=""-->
+        <!--         required-->
+        <!--         name="ingest_status"-->
+        <!--         #ingest_status='ngModel'-->
+        <!--         [(ngModel)]="content.ingest_status"-->
+        <!-->-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+        <!--  <label for="qc_status">QC Status</label>-->
+        <!--  <input type="string"-->
+        <!--         id="qc_status"-->
+        <!--         placeholder=""-->
+        <!--         required-->
+        <!--         name="qc_status"-->
+        <!--         #qc_status='ngModel'-->
+        <!--         [(ngModel)]="content.qc_status"-->
+        <!-->-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+        <!--  <label for="qc_notes">QC Notes</label>-->
+        <!--  <input type="string"-->
+        <!--         id="qc_notes"-->
+        <!--         placeholder=""-->
+        <!--         required-->
+        <!--         name="qc_notes"-->
+        <!--         #qc_notes='ngModel'-->
+        <!--         [(ngModel)]="content.qc_notes"-->
+        <!-->-->
+        <!--</div>-->
     </form>
 </div>
 

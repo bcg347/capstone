@@ -8,6 +8,7 @@ import { ContentRejectionsComponent } from './content/content-rejected.component
 import { ContentRfaComponent } from './content/content-rfa.component';
 import { ContentProgressComponent } from './content/content-progress.component';
 import { ContentListComponent } from './content/content-list.component';
+import { ContentShowComponent } from './content/content-show.component';
 
 import { AvidIngestComponent } from './workflow/avidingest.component';
 import { SpComponent } from './workflow/sp.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'content/rfa', component: ContentRfaComponent },
   { path: 'content/inprogress', component: ContentProgressComponent },
   { path: 'content/list', component: ContentListComponent },
+  { path: 'content/:barcode', component: ContentShowComponent },
   { path: 'avidingest', component: AvidIngestComponent },
   { path: 'sp', component: SpComponent },
   { path: 'edit', component: EditComponent },

@@ -1,5 +1,5 @@
-import { Component } from '@angular/core'
-import { Content } from './content'
+import { Component } from '@angular/core';
+import { Content } from './content';
 
 @Component({
     moduleId: module.id,
