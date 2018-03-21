@@ -1,3 +1,22 @@
-.nav li {
-    display: inline-block;
+body {
+    background-image: url("apple-products-backgrounds-powerpoint.jpg");
+    font-family: 'Righteous', cursive;
+    background-color: #eff3f9;
+    background-size: cover;
 }
+
+.nav li a {
+    color: #1e2533; 
+    font-size: 2em;
+    padding: 40px;
+}
+
+.homepage-links {
+    padding: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    text-align: center;
+}
+
